@@ -46,6 +46,10 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  'POST /artists': 'ArtistController.create'
+  'POST /artists':                'ArtistController.create',
+  'GET /artists':                 'ArtistController.index',
+
+  'POST /artists/:id/songs':      'SongController.create',
+  'GET /artists/:id/songs':       'SongController.index'
 
 };
